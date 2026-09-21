@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="SNK Group — Группа компаний. Мы производим экологически чистый натуральный продукт.">
+  <meta name="author" content="SNK Group">
+  <link rel="icon" href="ico/favicon.ico">
+
+  <title>SNK :: Группа компаний</title>
+
+  <!-- Lightbox -->
+  <link href="./styles/lightbox.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="./styles/all.css">
+
+  <!-- NEW Redesign CSS -->
+  <link href="./styles/snk-redesign.css" rel="stylesheet">
+
+  <!-- Google Fonts (fallback via import in CSS, or link here if online) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="snk-new">
+
+  <!-- ══════════════════════════════════════════════════════════
+       NAVBAR
+       ══════════════════════════════════════════════════════════ -->
+  <nav class="snk-navbar" id="snkNavbar">
+    <div class="snk-navbar-inner">
+
+      <!-- Logo -->
+      <a href="#hero" class="snk-logo">
+        <img src="./images/snk.png" alt="SNK Group логотип">
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <ul class="snk-nav-links">
+        <li><a href="#hero">Главная</a></li>
+        <li><a href="#companies">Компании</a></li>
+        <li><a href="#industries">Отрасли</a></li>
+        <li><a href="#gallery">Галерея</a></li>
+        <li><a href="#features">Преимущества</a></li>
+        <li><a href="#partners">Партнёры</a></li>
+        <li><a href="#contact" class="snk-btn-cta">Контакты</a></li>
+        <li class="snk-nav-flag"><a href="./pages/en.html"><img src="./images/usa.png" alt="EN"> EN</a></li>
+        <li class="snk-nav-flag"><a href="./pages/ru.html"><img src="./images/russian.png" alt="RU"> RU</a></li>
+      </ul>
+
+      <!-- Hamburger (mobile) -->
+      <button class="snk-hamburger" id="snkHamburger" aria-label="Меню">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+  </nav>
+
+  <!-- Mobile Nav Drawer -->
+  <div class="snk-mobile-nav" id="snkMobileNav">
+    <img src="./images/snk.png" alt="SNK Group" class="snk-mobile-logo">
+    <button class="snk-mobile-close" id="snkMobileClose" aria-label="Закрыть">&times;</button>
+    <a href="#hero"       onclick="closeMobileNav()">Главная</a>
+    <a href="#companies"  onclick="closeMobileNav()">Компании</a>
+    <a href="#industries" onclick="closeMobileNav()">Отрасли</a>
+    <a href="#gallery"    onclick="closeMobileNav()">Галерея</a>
+    <a href="#features"   onclick="closeMobileNav()">Преимущества</a>
+    <a href="#partners"   onclick="closeMobileNav()">Партнёры</a>
+    <a href="#contact"    onclick="closeMobileNav()">Контакты</a>
+    <div style="display:flex;gap:16px;margin-top:8px;">
+      <a href="./pages/en.html" style="border-bottom:none;display:flex;align-items:center;gap:6px;font-size:16px;width:auto;">
+        <img src="./images/usa.png" style="width:24px;" alt="EN"> EN
+      </a>
+      <a href="./pages/ru.html" style="border-bottom:none;display:flex;align-items:center;gap:6px;font-size:16px;width:auto;">
+        <img src="./images/russian.png" style="width:24px;" alt="RU"> RU
+      </a>
+    </div>
+  </div>
+
+
+  <!-- ══════════════════════════════════════════════════════════
+       HERO
+       ══════════════════════════════════════════════════════════ -->
+  <section class="snk-hero" id="hero">
+    <div class="snk-hero-bg"></div>
+    <div class="snk-hero-overlay"></div>
+
+    <div class="snk-hero-content">
+      <img src="./images/SNK_solo_logo.png" alt="SNK Group" class="snk-hero-logo">
+      <h1 class="snk-hero-title">SNK Group</h1>
+      <p class="snk-hero-subtitle">
+        Мы производим экологически чистый<br>натуральный продукт
+      </p>
+      <div class="snk-hero-btns">
+        <a href="#companies" class="snk-btn-hero-primary">
+          Наши компании
+          <i class="fas fa-arrow-right"></i>
+        </a>
+        <a href="#contact" class="snk-btn-hero-outline">
+          Связаться с нами
+        </a>
+      </div>
+    </div>
+
+    <div class="snk-hero-scroll">↓</div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════════════════
+       STATS BAND
+       ══════════════════════════════════════════════════════════ -->
+  <section class="snk-stats">
+    <div class="snk-container">
+      <div class="snk-stats-grid">
+        <div class="snk-stat-item">
+          <div class="snk-stat-number">20+</div>
+          <div class="snk-stat-label">лет опыта в сельском хозяйстве</div>
+        </div>
+        <div class="snk-stat-item">
+          <div class="snk-stat-number">5</div>
+          <div class="snk-stat-label">дочерних компаний в группе</div>
+        </div>
+        <div class="snk-stat-item">
+          <div class="snk-stat-number">2</div>
+          <div class="snk-stat-label">области Казахстана</div>
+        </div>
+        <div class="snk-stat-item">
+          <div class="snk-stat-number">100%</div>
+          <div class="snk-stat-label">натуральная продукция без ГМО</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════════════════
+       COMPANIES SECTION
+       ══════════════════════════════════════════════════════════ -->
+  <section class="snk-section snk-companies" id="companies">
+    <div class="snk-container">
+      <h2 class="snk-section-title">Группа компаний</h2>
+      <div class="snk-divider"></div>
+      <p style="text-align:center;color:#6b6b6b;font-size:17px;max-width:620px;margin:0 auto 48px;line-height:1.7;">
+        Мы производим экологически чистый натуральный продукт
+      </p>
+
+      <div class="snk-companies-grid">
+
+        <!-- Card 1 — Астык Инвест -->
+        <div class="snk-company-card">
+          <div class="snk-card-img-wrap is-logo">
+            <img src="./images/g5.png" alt="Кокшетау Астык Инвест">
+            <div class="snk-card-icon">
+              <img src="./images/corn_icon.png" alt="icon">
+            </div>
+          </div>
+          <div class="snk-card-body">
+            <div class="snk-card-title">ТОО «Кокшетау Астык Инвест ЛТД»</div>
+            <p class="snk-card-desc">
+              Предприятие зарегистрировано в РК в 2002 году.
+              Акмолинская область, Зерендинский район.
+              Специализация: растениеводство.
+            </p>
+            <a href="#industries" class="snk-card-link">Подробнее <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Card 2 — SNK AGRO Saule -->
+        <div class="snk-company-card">
+          <div class="snk-card-img-wrap is-logo">
+            <img src="./images/snkagro.png" alt="SNK AGRO Saule">
+          </div>
+          <div class="snk-card-body">
+            <div class="snk-card-title">ТОО «SNK AGRO Saule»</div>
+            <p class="snk-card-desc">
+              Предприятие зарегистрировано в РК в 2016 году.
+              Акмолинская область, район Биржан Сал.
+              Производство зерновых и масличных культур.
+            </p>
+            <a href="#industries" class="snk-card-link">Подробнее <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Card 3 — Global Beef Products -->
+        <div class="snk-company-card">
+          <div class="snk-card-img-wrap is-logo">
+            <img src="./images/1_-D0-9C-D0-BE-D0-BD-D1-82-D0-B0-D0-B6-D0-BD-D0-B0-D1-8F-20-D0-BE-D0-B1-D0-BB-D0-B0-D1-81-D1-82-D1-8.png" alt="Global Beef Products">
+          </div>
+          <div class="snk-card-body">
+            <div class="snk-card-title">ТОО «Global Beef Products»</div>
+            <p class="snk-card-desc">
+              Предприятие зарегистрировано в РК в 2015 году.
+              Карагандинская область, Актогайский район.
+              Разведение абердин-ангусской породы КРС.
+            </p>
+            <a href="#industries" class="snk-card-link">Подробнее <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Card 4 — QAZAQ STEPPE SHEEP -->
+        <div class="snk-company-card">
+          <div class="snk-card-img-wrap is-logo">
+            <img src="./images/qs_logo.png" alt="Qazaq Steppe Sheep">
+          </div>
+          <div class="snk-card-body">
+            <div class="snk-card-title">ТОО «QAZAQ STEPPE SHEEP»</div>
+            <p class="snk-card-desc">
+              Предприятие зарегистрировано в РК в 2018 году.
+              Карагандинская область, Актогайский район.
+              Разведение мелкого рогатого скота.
+            </p>
+            <a href="http://steppesheep.com/" class="snk-card-link" target="_blank" rel="noopener">Посетить сайт <i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+
+        <!-- Card 5 — QAZAQ MEAT -->
+        <div class="snk-company-card">
+          <div class="snk-card-img-wrap is-logo">
+            <img src="./images/meat.png" alt="Qazaq Meat">
+            <div class="snk-card-icon">
+              <img src="./images/cow.png" alt="icon">
+            </div>
+          </div>
+          <div class="snk-card-body">
+            <div class="snk-card-title">ТОО «QAZAQ MEAT»</div>
+            <p class="snk-card-desc">
+              Предприятие зарегистрировано в РК в 2012 году.
+              Карагандинская область, Актогайский район.
+              Разведение лошадей. Производство конины.
+            </p>
+            <a href="#industries" class="snk-card-link">Подробнее <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+
+      </div><!-- /companies-grid -->
+    </div>
+  </section>
+
+  <!-- ── PHOTO DIVIDER 1 ── -->
+  <div class="snk-photo-divider">
+    <div class="snk-photo-divider-bg snk-divider-bg-1"></div>
+    <div class="snk-photo-divider-overlay"></div>
+    <div class="snk-photo-divider-content">
+      <h3>Более 20 лет в сельском хозяйстве Казахстана</h3>
+      <p>Растениеводство · Животноводство · Экологически чистая продукция</p>
+    </div>
+  </div>
+
+
+  <!-- ══════════════════════════════════════════════════════════
+       INDUSTRIES
+       ══════════════════════════════════════════════════════════ -->
+  <section class="snk-section snk-industries" id="industries">
+    <div class="snk-industries-bg"></div>
+    <div class="snk-container">
+
+      <div class="snk-industries-grid">
+
+        <!-- Left image -->
+        <div class="snk-industry-image">
+          <img src="./images/g7.jpeg" alt="Отрасли сельского хозяйства: растениеводство и животноводство">
+        </div>
+
+        <!-- Right content -->
+        <div class="snk-industry-content">
+          <span class="snk-section-label">Отрасли SNK Group</span>
+          <h2 class="snk-industry-title">Два ключевых<br>направления деятельности</h2>
+
+          <div class="snk-industry-item">
+            <div class="snk-industry-icon">
+              <img src="./images/corn_icon.png" alt="Растениеводство">
+            </div>
+            <div class="snk-industry-text">
+              <h4>Растениеводство</h4>
+              <p>ТОО «Кокшетау Астык Инвест ЛТД» и ТОО «SNK AGRO Saule» — производители зерновых и масличных культур: пшеница, ячмень, овёс, рапс, лён, чечевица, горох. Рациональное использование земель, природоохранные технологии.</p>
+            </div>
+          </div>
+
+          <div class="snk-industry-item">
+            <div class="snk-industry-icon">
+              <img src="./images/sheep_icon.png" alt="Животноводство">
+            </div>
+            <div class="snk-industry-text">
+              <h4>Животноводство</h4>
+              <p>ТОО «QAZAQ MEAT», «Global Beef Products» и «QAZAQ STEPPE SHEEP» — производители мясного направления (конина, говядина, баранина). Разведение абердин-ангусской породы, мелкого рогатого скота и лошадей.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ── PHOTO DIVIDER 2 — после Industries, перед Video ── -->
+  <div class="snk-photo-divider">
+    <div class="snk-photo-divider-bg snk-divider-bg-2"></div>
+    <div class="snk-photo-divider-overlay"></div>
+    <div class="snk-photo-divider-content">
+      <h3>Природа Казахстана — наш главный ресурс</h3>
+      <p>Акмолинская и Карагандинская области · Тысячи гектаров угодий</p>
+    </div>
+  </div>
+
+  <!-- VIDEO -->
+  <section class="snk-video-section" id="video">
+    <div class="snk-container">
+      <h2 class="snk-section-title">SNK Group в действии</h2>
+      <div class="snk-divider" style="background:linear-gradient(to right,#c9a227,#fff);"></div>
+      <div class="snk-video-wrapper">
+        <iframe src="https://www.youtube.com/embed/eK3yhvpXcNQ"
+                title="SNK Group"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="snk-section snk-gallery" id="gallery">
+    <div class="snk-container">
+      <h2 class="snk-section-title">Наша галерея</h2>
+      <div class="snk-divider"></div>
+
+      <div class="snk-gallery-grid">
+        <a class="snk-gallery-item" href="./images/new_g5.jpg"    data-lightbox="snk-gallery" data-title="Растениеводство"><img src="./images/new_g5.jpg"    alt="Галерея"></a>
+        <a class="snk-gallery-item" href="./images/g7.jpeg"    data-lightbox="snk-gallery" data-title="Поля"><img src="./images/g7.jpeg"    alt="Галерея"></a>
+        <a class="snk-gallery-item" href="./images/g6.jpeg"    data-lightbox="snk-gallery" data-title="Техника"><img src="./images/g6.jpeg"    alt="Галерея"></a>
+        <a class="snk-gallery-item" href="./images/g3.jpeg"    data-lightbox="snk-gallery" data-title="Урожай"><img src="./images/g3.jpeg"    alt="Галерея"></a>
+        <a class="snk-gallery-item" href="./images/g1.jpeg"    data-lightbox="snk-gallery" data-title="Животноводство"><img src="./images/g1.jpeg"    alt="Галерея"></a>
+        <a class="snk-gallery-item" href="./images/g2.jpeg"    data-lightbox="snk-gallery" data-title="Скот"><img src="./images/g2.jpeg"    alt="Галерея"></a>
+        <a class="snk-gallery-item" href="./images/g4.jpeg"    data-lightbox="snk-gallery" data-title="Природа"><img src="./images/g4.jpeg"    alt="Галерея"></a>
+        <a class="snk-gallery-item" href="./images/gal1.jpeg"  data-lightbox="snk-gallery" data-title="SNK Group"><img src="./images/gal1.jpeg"  alt="Галерея"></a>
+        <a class="snk-gallery-item" href="./images/gal2.jpeg"  data-lightbox="snk-gallery" data-title="SNK Group"><img src="./images/gal2.jpeg"  alt="Галерея"></a>
+        <a class="snk-gallery-item" href="./images/gal3.jpeg"  data-lightbox="snk-gallery" data-title="SNK Group"><img src="./images/gal3.jpeg"  alt="Галерея"></a>
+        <a class="snk-gallery-item" href="./images/gal4.jpeg"  data-lightbox="snk-gallery" data-title="SNK Group"><img src="./images/gal4.jpeg"  alt="Галерея"></a>
+        <a class="snk-gallery-item" href="./images/gal5.jpeg"  data-lightbox="snk-gallery" data-title="SNK Group"><img src="./images/gal5.jpeg"  alt="Галерея"></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PHOTO DIVIDER 3 — после Gallery, перед Features ── -->
+  <div class="snk-photo-divider">
+    <div class="snk-photo-divider-bg snk-divider-bg-3"></div>
+    <div class="snk-photo-divider-overlay"></div>
+    <div class="snk-photo-divider-content">
+      <h3>Качество и традиции казахстанского агробизнеса</h3>
+      <p>Без ГМО · Экологически чистое производство · Стабильное качество</p>
+    </div>
+  </div>
+
+  <!-- FEATURES / ADVANTAGES -->
+  <section class="snk-section snk-features" id="features">
+    <div class="snk-container">
+      <h2 class="snk-section-title">Почему именно мы</h2>
+      <div class="snk-divider"></div>
+
+      <div class="snk-features-grid">
+
+        <div class="snk-feature-card">
+          <div class="snk-feature-number">01</div>
+          <h3 class="snk-feature-title">Наша продукция</h3>
+          <p class="snk-feature-text">Наша продукция не подвергается генной модификации и не содержит ГМО. Мы производим экологически чистый продукт!</p>
+        </div>
+
+        <div class="snk-feature-card">
+          <div class="snk-feature-number">02</div>
+          <h3 class="snk-feature-title">Род деятельности</h3>
+          <p class="snk-feature-text">Сельское хозяйство, базовые направления: животноводство и растениеводство. Опыт в агропромышленном секторе Казахстана более 20 лет.</p>
+        </div>
+
+        <div class="snk-feature-card">
+          <div class="snk-feature-number">03</div>
+          <h3 class="snk-feature-title">Инфраструктура</h3>
+          <p class="snk-feature-text">Предприятия располагают посевными и пастбищными землями в Акмолинской и Карагандинской областях. Снабжены электричеством, водой, связью.</p>
+        </div>
+
+        <div class="snk-feature-card">
+          <div class="snk-feature-number">04</div>
+          <h3 class="snk-feature-title">Растениеводство</h3>
+          <p class="snk-feature-text">Объединение технологий выращивания и науки позволяют совершенствовать приёмы производства для сбора максимальных урожаев наилучшего качества.</p>
+        </div>
+
+        <div class="snk-feature-card">
+          <div class="snk-feature-number">05</div>
+          <h3 class="snk-feature-title">Животноводство</h3>
+          <p class="snk-feature-text">Разведение племенного скота абердин-ангусской породы, казахской белоголовой, овец и лошадей. Стойлово-пастбищная система содержания.</p>
+        </div>
+
+        <div class="snk-feature-card">
+          <div class="snk-feature-number">06</div>
+          <h3 class="snk-feature-title">Кадровые ресурсы</h3>
+          <p class="snk-feature-text">Основной актив — квалифицированные специалисты АПК со стажем более 10 лет. Внедрена система подготовки кадров и обучения.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ── PHOTO DIVIDER 4 — перед Partners ── -->
+  <div class="snk-photo-divider">
+    <div class="snk-photo-divider-bg snk-divider-bg-4"></div>
+    <div class="snk-photo-divider-overlay"></div>
+    <div class="snk-photo-divider-content">
+      <h3>Вместе с надёжными партнёрами</h3>
+      <p>Казахстан · Международное сотрудничество · Инновации в АПК</p>
+    </div>
+  </div>
+
+  <!-- PARTNERS -->
+  <section class="snk-section snk-partners" id="partners">
+    <div class="snk-container">
+      <h2 class="snk-section-title">Наши партнёры</h2>
+      <div class="snk-divider"></div>
+
+      <div class="snk-partners-grid">
+        <a class="snk-partner-item" href="https://www.horsch.com/ru/" target="_blank" rel="noopener">
+          <img src="./images/logo-horsch.jpeg" alt="Horsch">
+        </a>
+        <a class="snk-partner-item" href="http://www.spk-saryarka.kz/" target="_blank" rel="noopener">
+          <img src="./images/p2.png" alt="СПК Сарыарка">
+        </a>
+        <a class="snk-partner-item" href="https://www.gov.kz/memleket/entities/mfa" target="_blank" rel="noopener">
+          <img src="./images/logo-minist.jpeg" alt="Министерство">
+        </a>
+        <a class="snk-partner-item" href="http://russian.petkus.de/" target="_blank" rel="noopener">
+          <img src="./images/p5.png" alt="Petkus">
+        </a>
+        <a class="snk-partner-item" href="http://www.newholland.com/" target="_blank" rel="noopener">
+          <img src="./images/p4.png" alt="New Holland">
+        </a>
+        <a class="snk-partner-item" href="http://rostselmash.com/" target="_blank" rel="noopener">
+          <img src="./images/p3.png" alt="Ростсельмаш">
+        </a>
+        <a class="snk-partner-item" href="https://www.gov.kz/memleket/entities/karaganda" target="_blank" rel="noopener">
+          <img src="./images/logo-akimat.jpeg" alt="Акимат">
+        </a>
+        <a class="snk-partner-item" href="https://www.gov.kz/memleket/entities/aqmola" target="_blank" rel="noopener">
+          <img src="./images/logo-aqmola.png" alt="Акмола">
+        </a>
+        <a class="snk-partner-item" href="https://invest.gov.kz/ru/" target="_blank" rel="noopener">
+          <img src="./images/logo-kaz-inv.png" alt="Kazakh Invest">
+        </a>
+        <a class="snk-partner-item" href="http://nasec.kz/ru" target="_blank" rel="noopener">
+          <img src="./images/naseo.png" alt="НАСЭО">
+        </a>
+        <a class="snk-partner-item" href="https://www.caseih.com/apac/ru-ru/home" target="_blank" rel="noopener">
+          <img src="./images/caseih.webp" alt="Case IH">
+        </a>
+        <a class="snk-partner-item" href="https://kazatu.edu.kz/" target="_blank" rel="noopener">
+          <img src="./images/kazatu.svg" alt="КазАТУ">
+        </a>
+        <a class="snk-partner-item" href="https://baraev.kz/ru/" target="_blank" rel="noopener">
+          <img src="./images/baraev.png" alt="Бараев">
+        </a>
+        <a class="snk-partner-item" href="https://www.deere.ru/ru/" target="_blank" rel="noopener">
+          <img src="./images/logo-john.png" alt="John Deere">
+        </a>
+        <a class="snk-partner-item" href="https://www.agrocredit.kz/" target="_blank" rel="noopener">
+          <img src="./images/bait-logo.png" alt="БАИТ">
+        </a>
+        <a class="snk-partner-item" href="https://www.gov.kz/memleket/entities/moa?lang=ru" target="_blank" rel="noopener">
+          <img src="./images/selsk-logo.png" alt="МСХ РК">
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════════════════
+       CONTACT
+       ══════════════════════════════════════════════════════════ -->
+  <section class="snk-section snk-contact" id="contact">
+    <div class="snk-container">
+      <h2 class="snk-section-title">Наши контакты</h2>
+      <div class="snk-divider"></div>
+
+      <div class="snk-contact-grid">
+
+        <!-- Info -->
+        <div class="snk-contact-info">
+          <h3>Мы всегда готовы<br>вам ответить</h3>
+
+          <div class="snk-contact-item">
+            <div class="snk-contact-icon">📍</div>
+            <div>
+              <div class="snk-contact-label">Адрес</div>
+              <p class="snk-contact-value">Республика Казахстан, 010000<br>г. Нур-Султан, ул. Сауран 3, офис №3</p>
+            </div>
+          </div>
+
+          <div class="snk-contact-item">
+            <div class="snk-contact-icon">📞</div>
+            <div>
+              <div class="snk-contact-label">Телефон</div>
+              <p class="snk-contact-value">+7 7172 30 33 19<br>+7 777 222 93 33</p>
+            </div>
+          </div>
+
+          <div class="snk-contact-item">
+            <div class="snk-contact-icon">✉️</div>
+            <div>
+              <div class="snk-contact-label">E-mail</div>
+              <p class="snk-contact-value">enquiries@snk.kz</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <form class="snk-form" id="form_sendemail" role="form">
+          <div id="form_message" style="display:none;" role="alert"></div>
+
+          <div class="snk-form-row">
+            <input type="email" name="email" class="snk-input" id="email" placeholder="Ваш e-mail" required>
+            <input type="text"  name="name"  class="snk-input" id="name"  placeholder="Ваше имя">
+          </div>
+
+          <textarea name="message" class="snk-textarea" id="message" rows="5" placeholder="Ваше сообщение..."></textarea>
+
+          <button type="submit" class="snk-btn-submit">
+            Отправить
+            <i class="fas fa-paper-plane"></i>
+          </button>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════════════════
+       MAP
+       ══════════════════════════════════════════════════════════ -->
+  <div class="snk-map-section">
+    <div id="map-canvas" class="contact__map" style="width:100%;height:100%;"></div>
+  </div>
+
+
+  <!-- ══════════════════════════════════════════════════════════
+       FOOTER
+       ══════════════════════════════════════════════════════════ -->
+  <footer class="snk-footer">
+    <div class="snk-container">
+      <div class="snk-footer-grid">
+
+        <div>
+          <div class="snk-footer-logo">
+            <img src="./images/snk.png" alt="SNK Group">
+          </div>
+          <p class="snk-footer-about">
+            SNK Group — казахстанская агропромышленная группа компаний. Производим экологически чистый натуральный продукт без ГМО.
+          </p>
+        </div>
+
+        <div>
+          <div class="snk-footer-title">Компании</div>
+          <ul class="snk-footer-links">
+            <li><a href="#companies">Кокшетау Астык Инвест</a></li>
+            <li><a href="#companies">SNK AGRO Saule</a></li>
+            <li><a href="#companies">Global Beef Products</a></li>
+            <li><a href="#companies">Qazaq Steppe Sheep</a></li>
+            <li><a href="#companies">Qazaq Meat</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="snk-footer-title">Разделы</div>
+          <ul class="snk-footer-links">
+            <li><a href="#hero">Главная</a></li>
+            <li><a href="#industries">Отрасли</a></li>
+            <li><a href="#gallery">Галерея</a></li>
+            <li><a href="#features">Преимущества</a></li>
+            <li><a href="#partners">Партнёры</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="snk-footer-title">Контакты</div>
+          <ul class="snk-footer-links">
+            <li><a href="mailto:enquiries@snk.kz">enquiries@snk.kz</a></li>
+            <li><a href="tel:+77172303319">+7 7172 30 33 19</a></li>
+            <li><a href="tel:+77772229333">+7 777 222 93 33</a></li>
+            <li><a href="#contact">Написать нам</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <hr class="snk-footer-divider">
+
+      <div class="snk-footer-bottom">
+        <div class="snk-footer-copy">
+          &copy; 2024 SNK Group. Все права защищены. Республика Казахстан.
+        </div>
+        <div style="display:flex;gap:16px;">
+          <a href="./pages/en.html" style="color:rgba(255,255,255,0.5);font-size:13px;text-decoration:none;display:flex;align-items:center;gap:6px;">
+            <img src="./images/usa.png" style="width:18px;" alt="EN"> English
+          </a>
+          <a href="./pages/ru.html" style="color:rgba(255,255,255,0.5);font-size:13px;text-decoration:none;display:flex;align-items:center;gap:6px;">
+            <img src="./images/russian.png" style="width:18px;" alt="RU"> Русский
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ══════════════════════════════════════════════════════════
+       SCRIPTS
+       ══════════════════════════════════════════════════════════ -->
+  <script src="./scripts/jquery.min.js"></script>
+  <script src="./scripts/lightbox.min.js"></script>
+  <script src="./scripts/contact.js"></script>
+
+  <script>
+    // ── Navbar scroll effect ──
+    const navbar = document.getElementById('snkNavbar');
+    window.addEventListener('scroll', function () {
+      if (window.scrollY > 60) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    }, { passive: true });
+
+    // ── Mobile nav ──
+    const hamburger   = document.getElementById('snkHamburger');
+    const mobileNav   = document.getElementById('snkMobileNav');
+    const mobileClose = document.getElementById('snkMobileClose');
+
+    hamburger.addEventListener('click', function () {
+      mobileNav.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    });
+
+    mobileClose.addEventListener('click', closeMobileNav);
+
+    function closeMobileNav() {
+      mobileNav.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    // Close on overlay click (outside links)
+    mobileNav.addEventListener('click', function(e) {
+      if (e.target === mobileNav) closeMobileNav();
+    });
+
+    // ── Smooth scroll for anchor links ──
+    document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+      anchor.addEventListener('click', function (e) {
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          const offset = 74; // navbar height
+          const top = target.getBoundingClientRect().top + window.pageYOffset - offset;
+          window.scrollTo({ top: top, behavior: 'smooth' });
+        }
+      });
+    });
+
+    // ── Google Maps ──
+    function initMap() {
+      var mapOptions = {
+        center: { lat: 51.1801, lng: 71.4460 },
+        zoom: 14,
+        styles: [
+          { featureType: 'all', elementType: 'geometry.fill', stylers: [{ color: '#f5f5f0' }] },
+          { featureType: 'water', elementType: 'geometry', stylers: [{ color: '#c9e8d1' }] },
+          { featureType: 'road', elementType: 'geometry.stroke', stylers: [{ color: '#ffffff' }] }
+        ]
+      };
+      var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+      var marker = new google.maps.Marker({
+        position: { lat: 51.1801, lng: 71.4460 },
+        map: map,
+        title: 'SNK Group'
+      });
+    }
+  </script>
+
+  <!-- Google Maps API -->
+  <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
+
+</body>
+</html>
